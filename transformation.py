@@ -3,6 +3,8 @@ x = 1
 print(str(x).zfill(4))
 
 y = 'Sami Kalammallah'
+print(y[2])
+print(y[13])
 print(y.upper())
 print(y.lower())
 print(y.isupper())
@@ -43,12 +45,13 @@ while True:
         break
     print('Password Salah!')
 
-# join and split String
+# join, split and replace String
 Mobil = ' dan '.join(['Roda', 'Lampu', 'Knalpot', 'Mesin'])
 print('Komponen Mobil terdiri dari '+Mobil)
 print(Mobil.split('dan'))
 
 z = 'testing'
+print(z.index('s'))
 print(z.center(15, '-'))
 print(z.rjust(15))
 print(z.strip())

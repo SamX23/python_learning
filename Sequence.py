@@ -45,10 +45,11 @@ a = {2, 2, 2, 3, 3, 4, 4, 5}
 print(a)
 
 # dictionary ( value:key )
-b = {1: 'value', 'key':2}
+b = {1: 'value', 'key':2, 'value':'key'}
 print(type(b))
 print(b[1])
 print(b['key'])
+print(b)
 
 # Konvert / konversi
 float(5)

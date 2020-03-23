@@ -36,3 +36,39 @@ def cetak(name, age=10):
 
 cetak('Sami', 24)
 cetak('Rifka')
+
+# variable-length arguments
+def funcname(fixedArg, *args):
+    print('arg posisi {}'.format(fixedArg))
+    for a in args:
+        print('arg tambahan {}'.format(a))
+
+funcname(10)
+funcname(20, 70, 12)
+
+# variable-dinamic arguments
+def printout(*args, **kwargs):
+    for a in args:
+        print('args posisi {}'.format(a))
+    for key, value in kwargs.items():
+        print('args kata kunci {}:{}'.format(key, value))
+
+printout(1, 2, 3)
+printout(a=2, b=3, c=4)
+printout(1, 3, a=2, b=4)
+printout(*(2, 3), **{'a': 1, 'b': 4})
+
+# anonim func lambda
+sum = lambda arg1, arg2: arg1 * arg2
+print('sum of total : ', sum(20, 30))
+
+# Variable Range
+total = 0
+def sum(arg1, arg2):
+    global total
+    total = arg1 + arg2
+    print('Inside func: {}'.format(total))
+    return total
+
+total = sum(10, 20)
+print('Outside func: {}'.format(total))

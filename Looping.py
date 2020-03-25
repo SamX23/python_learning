@@ -19,6 +19,10 @@ hedon = ['Nmax', 'Apple', 'Nike', 'Swiss Army']
 for index in range(len(hedon)):
     print('Bisa {}'.format(hedon[index]))
 
+# loop each char
+for x in input(''):
+    print(x)
+
 # while
 print('')
 hitung = 0

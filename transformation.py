@@ -21,6 +21,18 @@ mLine ="""hoi!
 wassap?
 ini test."""
 print(mLine)
+print('I', 'want', 'laptop', sep='*' * 4, end='hiss')
+print('This is python')
+print(
+"     ",'*',"\n",
+"   ",'*'*3,"\n",
+"  ",'*'*5,"\n",
+" ",'*'*7,"\n",
+"",'*'*9,"\n",
+"  ",'*'*5,"\n",
+"  ",'*'*5,"\n",
+"  ",'*'*5,"\n",)
+
 
 # isX dari String untuk pengecekan
 while True:

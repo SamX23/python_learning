@@ -1,4 +1,4 @@
-# Hangman challage from book 'SelfTaught' modified by Sami
+# Hangman challenge from book 'SelfTaught' modified by Sami
 # Coded on 27 March 2020 #stayathome
 import random
 import math
@@ -67,7 +67,7 @@ def HangMan():
 
     # Loop question
     while stage < len(wrong_gs) - 1:
-        print('\n')
+        print()
         guess = input('Masukan Huruf :')
         # if guess in word:
         if guess in wordsLft:

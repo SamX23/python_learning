@@ -1,4 +1,5 @@
 import sys
+
 # %s - String
 # %d - Integers
 # %f - Pecahan

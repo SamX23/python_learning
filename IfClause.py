@@ -3,15 +3,15 @@ print("Penghitung diskon")
 jmlh = int(input("Masukan uang: "))
 if jmlh < 1000:
     diskon = jmlh * 0.05
-    disc=int(diskon)
+    disc = int(diskon)
     print("Diskon: ", disc)
 elif jmlh < 2500:
     diskon = jmlh * 0.10
-    disc=int(diskon)
+    disc = int(diskon)
     print("Diskon: ", disc)
 else:
     diskon = jmlh * 0.15
-    disc=int(diskon)
+    disc = int(diskon)
     print("Diskon: ", disc)
 
 total = jmlh - diskon

@@ -17,22 +17,21 @@ print(y.islower())
 # \\          Backslash
 print("bismillah, ini adalah \'testing\' untuk kode \\\\ comment \ndan ini adalah new line")
 print(r"ini teks sesuai format \\ ', ! dan \n sebagainya")
-mLine ="""hoi!
+mLine = """hoi!
 wassap?
 ini test."""
 print(mLine)
 print('I', 'want', 'laptop', sep='*' * 4, end='hiss')
 print('This is python')
 print(
-"     ",'*',"\n",
-"   ",'*'*3,"\n",
-"  ",'*'*5,"\n",
-" ",'*'*7,"\n",
-"",'*'*9,"\n",
-"  ",'*'*5,"\n",
-"  ",'*'*5,"\n",
-"  ",'*'*5,"\n",)
-
+    "     ", '*', "\n",
+    "   ", '*' * 3, "\n",
+    "  ", '*' * 5, "\n",
+    " ", '*' * 7, "\n",
+    "", '*' * 9, "\n",
+    "  ", '*' * 5, "\n",
+    "  ", '*' * 5, "\n",
+    "  ", '*' * 5, "\n", )
 
 # isX dari String untuk pengecekan
 while True:
@@ -59,7 +58,7 @@ while True:
 
 # join, split and replace String
 Mobil = ' dan '.join(['Roda', 'Lampu', 'Knalpot', 'Mesin'])
-print('Komponen Mobil terdiri dari '+Mobil)
+print('Komponen Mobil terdiri dari ' + Mobil)
 print(Mobil.split('dan'))
 
 z = 'testing'

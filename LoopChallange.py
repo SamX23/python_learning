@@ -3,12 +3,13 @@
 import random
 
 print('Ketik \'q\' untuk keluar', '\n',
-        'Ketik \'random\' untuk menggunakan angka random', '\n',
-        'Atau ketik \'angka\' sebagai trigger tebakannya!', '\n',
-        'lalu tebak angka tersebut!')
+      'Ketik \'random\' untuk menggunakan angka random', '\n',
+      'Atau ketik \'angka\' sebagai trigger tebakannya!', '\n',
+      'lalu tebak angka tersebut!')
+
 
 # choice
-class kirakira:
+class Kirakira:
     def __init__(self):
         super().__init__()
 
@@ -18,7 +19,7 @@ class kirakira:
             sampai = int(input('Sampai : '))
             # if type(dari) and type(sampai) == str:
             #     return 'q'
-            return kirakira.rand(dari, sampai)
+            return Kirakira.rand(dari, sampai)
         elif self == 'angka':
             return input('Masukan angka biasa: ')
         else:
@@ -27,12 +28,13 @@ class kirakira:
     def rand(dari, sampai):
         res = random.randint(dari, sampai)
         return res
-    
+
+
 # main code
 
 while True:
     tanya = input('Menggunakan random atau angka biasa? ')
-    guess = kirakira.choice(tanya)
+    guess = Kirakira.choice(tanya)
 
     if tanya == 'q':
         print('Terima kasih, silahkan coba lagi nanti!\nExit\n')
@@ -43,7 +45,7 @@ while True:
     elif guess == 'err':
         print('\nHanya input \'random\', \'angka\' dan \'q\'.\nSilahkan dicoba kembali!')
         break
-    
+
     errCnt = 0
 
     # Guesser
@@ -57,7 +59,7 @@ while True:
         elif int(tebak) == guess:
             print('Mantaapp Benar! \n')
             break
-        
+
         elif tebak == str(guess):
             print('Mantaapp Benar! \n')
             break

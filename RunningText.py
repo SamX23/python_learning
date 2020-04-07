@@ -4,14 +4,14 @@ from random import randrange
 
 
 class Rtext:
-    def __init__(self, input,
-                 tm='0.1'):
+    def __init__(self, text,
+                 tm='0.02'):
         # print('Running Text!')
         # text = input
         sec = tm + str(randrange(1, 4, 1))
         sec = float(sec)
 
-        for x in input:
+        for x in text:
             sys.stdout.write(x)
             sys.stdout.flush()
             time.sleep(sec)

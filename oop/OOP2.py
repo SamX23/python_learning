@@ -1,6 +1,7 @@
 # init executes if using [class_name]() format
 class apple():
     print('This is an opening')
+
     # self = the class 'apple'
     # init = apple(args, args, args)
     def __init__(self, warna, bentuk, stok):
@@ -24,6 +25,7 @@ class apple():
     # apple.mold
     def rot(self, days, temperature):
         self.mold = days * (temperature * .1)
+
 
 # method 1
 apple('Red', 'Bulat', 'Banyaklah').cetak()

@@ -4,16 +4,17 @@
 # build a program using brands and trademark, a text based
 # program about mood and recommend a solution
 
+
 def program():
     goodMood = ['happy', 'gracious', 'great']
     neutralMood = ['shy', 'confused', 'meh']
     badMood = ['bad', 'anxious', 'cry']
 
     print("____________________________________________\n"
-            'Hello, welcome to mood helper app\n'
-            'Where you can tell us your mood today and\n'
-            'we help you by giving you a suggestion!')
-    
+          'Hello, welcome to mood helper app\n'
+          'Where you can tell us your mood today and\n'
+          'we help you by giving you a suggestion!')
+
     while True:
         inp = input('\nTell us your mood: ')
         if inp in goodMood:
@@ -27,5 +28,6 @@ def program():
             break
         else:
             print('nope')
+
 
 program()

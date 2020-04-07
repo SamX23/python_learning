@@ -45,7 +45,7 @@ a = {2, 2, 2, 3, 3, 4, 4, 5}
 print(a)
 
 # dictionary ( value:key )
-b = {1: 'value', 'key':2, 'value':'key'}
+b = {1: 'value', 'key': 2, 'value': 'key'}
 print(type(b))
 print(b[1])
 print(b['key'])
@@ -68,7 +68,7 @@ for bebas in range(9):
 for bebas in range(3, 9):
     print(bebas)
 
-[_ for _ in range(1, 9, 2)]  #list comprehension
+[_ for _ in range(1, 9, 2)]  # list comprehension
 
 listing = ['satu', 'dua', 'tiga']
 print('empat' in listing)
@@ -78,4 +78,3 @@ print('empat' not in listing)
 mobil = ['kuning', '2000 CC', 'Pertamax Turb', 2020]
 Color, engine, bensin, pembuatan = mobil
 print(Color, pembuatan)
-

@@ -1,4 +1,5 @@
 import sys
+
 # for
 huruf = input('Masukan huruf untuk di eja: ')
 for i in huruf:

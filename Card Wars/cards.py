@@ -1,8 +1,7 @@
 from random import shuffle
 
-
 class Card:
-    suits = ['spades', 'hearts', 'diamonds', 'clubs']
+    suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs']
     values = [None, None, '2', '3', '4', '5', '6', '7',
               '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
 
@@ -88,21 +87,14 @@ class Game:
                 print('{} win this round'.format(self.player2.name))
             print('War is over, {} wins'.format(self.winner(self.player1, self.player2)))
 
-    def winner(self, player1, player2):
+    @staticmethod
+    def winner(player1, player2):
         if player1.wins > player2.wins:
             return player1.name
         if player1.wins < player2.wins:
             return player2.name
         return "it was a tie"
 
-
-# print(Card(2, 1))
-# deck = Deck().cards
-# # print all in list
-# print(deck)
-# # print all in list using loop
-# for cards in deck:
-#     print(cards)
 
 play = Game()
 play.play_game()

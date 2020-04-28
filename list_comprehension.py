@@ -19,14 +19,36 @@ print('filter negative number')
 print([x for x in vec if x >= 0])
 print('apply function abs() to all element')
 print([abs(x) for x in vec])
-
+print('create a list of 2 tuples (x, y)')
+print([(x, x ** 2) for x in range(6)])
 fresh = ['   banana', '   berry  ', 'fruit   ']
 print('strip the space and call a method on each element')
 print([weapon.strip() for weapon in fresh])
-print('create a list of 2 tuples (x, y)')
-print([(x, x ** 2) for x in range(6)])
 print('join of flatten a list using a listcomp with for')
 ver = [[1, 2, 3], [3, 4, 5, 6], [6, 7, 8, 9, 10]]
 print([num for elem in ver for num in elem])
 print('list comprehension can include complex expression and nested function')
 print([str(round(pi, i)) for i in range(0, 7)])
+
+print('Versi Rieut')
+x = 1
+y = 1
+z = 1
+n = 2
+ar = []
+p = 0
+for i in range(x + 1):
+    for j in range(y + 1):
+        for k in range(z + 1):
+            if i + j + k != n:
+                ar.append([])
+                ar[p] = [i, j, k]
+                p += 1
+print(ar)
+
+print('Versi List comprhension edaan singkat')
+ar = [[i, j, k] for i in range(x + 1)
+      for j in range(y + 1)
+      for k in range(z + 1)
+      if i + j + k != n]
+print(ar)

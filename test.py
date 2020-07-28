@@ -1,4 +1,30 @@
-leg_a = float(input("Input first leg length: "))
-leg_b = float(input("Input second leg length: "))
-hypo = (leg_a ** 2 + leg_b ** 2) ** .5
-print("Hypotenuse length is", hypo)
+# print(y.upper())
+# print(y.lower())
+# print(y.isupper())
+# print(y.islower()
+
+x = 'TuLiSaN AlAy'
+y = ""
+for i in x:
+    if i.islower():
+        y = y + i.upper()
+    else:
+        y = y + i.lower()
+
+print(y)
+
+s = 'Sami'
+
+
+def swap_cs(s):
+    a = ""
+    for let in s:
+        if let.isupper():
+            # a += (let.lower())
+            a = a + let.lower()
+        else:
+            a += (let.upper())
+    return a
+
+
+print(swap_cs(s))

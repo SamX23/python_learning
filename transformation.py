@@ -61,10 +61,23 @@ Mobil = ' dan '.join(['Roda', 'Lampu', 'Knalpot', 'Mesin'])
 print('Komponen Mobil terdiri dari ' + Mobil)
 print(Mobil.split('dan'))
 
-z = 'testing'
+z = 'TestinG'
 print(z.index('s'))
 print(z.center(15, '-'))
 print(z.rjust(15))
 print(z.strip())
 zx = 'sami dan sami dan sami ke 3 itu samis itu samix'
 print(zx.replace('sami', 'ganti', 2))
+
+yi = z.swapcase()
+print(yi)
+
+x = 'TuLiSaN AlAy'
+y = ""
+for i in x:
+    if i.islower():
+        y = y + i.upper()
+    else:
+        y = y + i.lower()
+
+print(y)
